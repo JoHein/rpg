@@ -19,7 +19,7 @@ public class RpgApplication {
         @EventListener({ApplicationReadyEvent.class})
         void applicationReadyEvent() {
             System.out.println("Application started ... launching browser now");
-            goBrowseApp("http://localhost:8080/");
+            goBrowseApp("http://localhost:8080/#/home");
         }
 
         public static void goBrowseApp(String url) {

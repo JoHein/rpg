@@ -5,28 +5,28 @@
  */
 package com.rpg.rpg.controllers;
 
-import com.rpg.rpg.entity.Utilisateur;
-import com.rpg.rpg.repositories.UtilisateurRepository;
+import com.rpg.rpg.entity.Champ;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import com.rpg.rpg.repositories.ChampRepository;
 
 /**
  *
  * @author t543115
  */
 @RestController
-@RequestMapping("/utilisateur")
-public class UtilisateurController {
+@RequestMapping("/api/champ")
+public class ChampController {
     
     @Autowired
-    UtilisateurRepository utilRepo;
+    ChampRepository champRepo;
     
     @RequestMapping(method=RequestMethod.GET)
-    public List<Utilisateur> listUtilisateurs() {
-        return utilRepo.findAll();
+    public List<Champ> listUtilisateurs() {
+        return champRepo.findAll();
     }
     
 }

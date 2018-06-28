@@ -5,7 +5,7 @@
  */
 package com.rpg.rpg.repositories;
 
-import com.rpg.rpg.entity.Utilisateur;
+import com.rpg.rpg.entity.Champ;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
@@ -13,6 +13,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  *
  * @author t543115
  */
-public interface UtilisateurRepository extends JpaRepository<Utilisateur,Long>, JpaSpecificationExecutor<Utilisateur> {
+public interface ChampRepository extends JpaRepository<Champ, Long>, JpaSpecificationExecutor<Champ> {
     
 }
