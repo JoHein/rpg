@@ -96,7 +96,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<nav class=\"navbar navbar-dark bg-dark mb-5\">\n  <a class=\"navbar-brand\" href=\"/\">Rpg Calcul</a>\n  <div class=\"navbar-expand mr-auto\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link active\" routerLink=\"home\" href=\"#\">Accueil</a>\n      <a class=\"nav-item nav-link\" routerLink=\"fiche\" href=\"#\">Fiche</a>\n    </div>\n  </div>\n</nav>\n\n<div class=\"container\">\n\n<app-message></app-message>\n\n<router-outlet></router-outlet>\n\n</div>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<nav class=\"navbar navbar-dark bg-dark mb-5\">\n  <a class=\"navbar-brand\" href=\"/\">Rpg Calcul</a>\n  <div class=\"navbar-expand mr-auto\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link active\" routerLink=\"home\" href=\"#\">Accueil</a>\n      <a class=\"nav-item nav-link\" routerLink=\"fiche\" href=\"#\">Fiche</a>\n    </div>\n  </div>\n</nav>\n\n<div class=\"container\">\n\n<router-outlet></router-outlet>\n\n</div>\n"
 
 /***/ }),
 
@@ -117,6 +117,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
@@ -127,7 +130,8 @@ var AppComponent = /** @class */ (function () {
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], AppComponent);
     return AppComponent;
 }());
@@ -163,17 +167,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_radiobutton__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(primeng_radiobutton__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var primeng_inputswitch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! primeng/inputswitch */ "./node_modules/primeng/inputswitch.js");
 /* harmony import */ var primeng_inputswitch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(primeng_inputswitch__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
-/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
-/* harmony import */ var _message_message_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./message/message.component */ "./src/app/message/message.component.ts");
-/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! primeng/button */ "./node_modules/primeng/button.js");
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(primeng_button__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! primeng/inputtextarea */ "./node_modules/primeng/inputtextarea.js");
+/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! primeng/dropdown */ "./node_modules/primeng/dropdown.js");
+/* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var primeng_growl__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! primeng/growl */ "./node_modules/primeng/growl.js");
+/* harmony import */ var primeng_growl__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(primeng_growl__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! primeng/components/common/messageservice */ "./node_modules/primeng/components/common/messageservice.js");
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var primeng_splitbutton__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! primeng/splitbutton */ "./node_modules/primeng/splitbutton.js");
+/* harmony import */ var primeng_splitbutton__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(primeng_splitbutton__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! primeng/confirmdialog */ "./node_modules/primeng/confirmdialog.js");
+/* harmony import */ var primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! primeng/autocomplete */ "./node_modules/primeng/autocomplete.js");
+/* harmony import */ var primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
+/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
+/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
+/* harmony import */ var _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fiche/fiche.service */ "./src/app/fiche/fiche.service.ts");
+/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,9 +229,9 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
-                _message_message_component__WEBPACK_IMPORTED_MODULE_15__["MessageComponent"],
-                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_16__["FicheComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_20__["HomeComponent"],
+                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_23__["FicheComponent"],
+                _search_search_component__WEBPACK_IMPORTED_MODULE_25__["SearchComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -214,11 +244,20 @@ var AppModule = /** @class */ (function () {
                 primeng_inputtext__WEBPACK_IMPORTED_MODULE_9__["InputTextModule"],
                 primeng_radiobutton__WEBPACK_IMPORTED_MODULE_10__["RadioButtonModule"],
                 primeng_inputswitch__WEBPACK_IMPORTED_MODULE_11__["InputSwitchModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_13__["InputTextareaModule"],
+                primeng_button__WEBPACK_IMPORTED_MODULE_12__["ButtonModule"],
+                primeng_dropdown__WEBPACK_IMPORTED_MODULE_14__["DropdownModule"],
+                primeng_growl__WEBPACK_IMPORTED_MODULE_15__["GrowlModule"],
+                primeng_splitbutton__WEBPACK_IMPORTED_MODULE_17__["SplitButtonModule"],
+                primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__["ConfirmDialogModule"],
+                primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__["AutoCompleteModule"]
             ],
             providers: [
-                _home_home_service__WEBPACK_IMPORTED_MODULE_13__["HomeService"],
-                _home_home_resolver__WEBPACK_IMPORTED_MODULE_14__["HomeResolver"]
+                _home_home_service__WEBPACK_IMPORTED_MODULE_21__["HomeService"],
+                _home_home_resolver__WEBPACK_IMPORTED_MODULE_22__["HomeResolver"],
+                _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_24__["FicheService"],
+                primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16__["MessageService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
@@ -248,7 +287,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  fiche works!\n</p>\n<div class=\"ui-inputgroup\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n    <span class=\"ui-float-label\">\n      <input id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Nom</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Prenom</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-top: 1.5em;\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Age</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <div style=\"position: relative; left: 20px; top: 5px;\">\n    <p-inputSwitch  onLabel=\"Femelle\" offLabel=\"Male\" [(ngModel)]=\"checked\" ></p-inputSwitch>\n  </div>\n  </div>\n\n\n"
+module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n\n<form #champForm=\"ngForm\">\n<section>\n<div class=\"ui-inputgroup\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\"></i>\n  </span>\n    <span class=\"ui-float-label\">\n      <input required name=\"nom\" [(ngModel)]=\"champ.nom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Nom</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input required name=\"prenom\" [(ngModel)]=\"champ.prenom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Prenom</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-top: 1.5em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.age\" name=\"age\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Age</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <div style=\"position: relative; left: 20px; top: 5px;\">\n    <p-inputSwitch  onLabel=\"Femelle\" offLabel=\"Male\" [(ngModel)]=\"champ.gender\" name=\"gender\" ></p-inputSwitch>\n  </div>\n  </div>\n</section>\n\n<section style=\"margin-top: 1.5em; display: inline-block;\">\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user-ninja\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.agilite\" name=\"agilite\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Agilité</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-gavel\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.force\"  name=\"force\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Force</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-book\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.intelect\" name=\"intelect\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Intelligence</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-magic\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.magie\"  name=\"magie\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Magie</label>\n    </span>\n</div>\n<div class=\"ui-inputgroup\" >\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-hourglass-half\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.endurance\" name=\"endurance\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Endurance</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-grin-stars\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.charisme\" name=\"charisme\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Charisme</label>\n    </span>\n\n</div>\n</section>\n\n<section style=\"margin-top: 1.5em; display: inline-block;vertical-align: top;\">\n  <div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fab fa-pied-piper-hat\"></i>\n  </span>\n      <p-dropdown  [options]=\"spe\" [(ngModel)]=\"champ.spe\" name=\"spe\" [style]=\"{'width':'187px'}\" editable=\"true\" placeholder=\"Spécification\"></p-dropdown>\n  </div>\n\n  <div class=\"ui-inputgroup\" >\n    <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;height: 84px;\">\n      <i class=\"fa fa-feather-alt\"></i>\n    </span>\n    <span class=\"ui-float-label\">\n        <textarea [(ngModel)]=\"champ.description\" name=\"description\"  id=\"float-label\" pInputTextarea style=\"border-right: 1px solid rgb(214, 214, 214);height: 84px;\"></textarea>\n        <label for=\"float-label\">Description</label>\n    </span>\n  </div>\n</section>\n  <section style=\"margin-top: 1.5em; display: inline-block;vertical-align: top;border: 1px solid lightslategrey;\">\n    Charts\n  </section>\n</form>\n\n<div>\n  <p-button [disabled]=\"!champForm.form.valid\" (onClick)=\"addChampForm(champ)\" icon=\"pi pi-check\" label=\"Enregistrer\"></p-button>\n</div>\n"
 
 /***/ }),
 
@@ -263,6 +302,10 @@ module.exports = "<p>\n  fiche works!\n</p>\n<div class=\"ui-inputgroup\" >\n  <
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FicheComponent", function() { return FicheComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _models_Champ_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/Champ.model */ "./src/app/models/Champ.model.ts");
+/* harmony import */ var _fiche_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fiche.service */ "./src/app/fiche/fiche.service.ts");
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/components/common/messageservice */ "./node_modules/primeng/components/common/messageservice.js");
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -273,20 +316,105 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var FicheComponent = /** @class */ (function () {
-    function FicheComponent() {
+    function FicheComponent(ficheService, messageService) {
+        this.ficheService = ficheService;
+        this.messageService = messageService;
+        this.champ = new _models_Champ_model__WEBPACK_IMPORTED_MODULE_1__["Champ"];
+        this.msgs = [];
+        this.spe = [
+            { label: 'Guerrier', value: 'GUERRIER' },
+            { label: 'Mage', value: 'MAGE' },
+            { label: 'Scout', value: 'SCOUT' },
+            { label: 'Bandit', value: 'BANDIT' },
+            { label: 'Pretre', value: 'PRETRE' }
+        ];
     }
     FicheComponent.prototype.ngOnInit = function () {
+    };
+    FicheComponent.prototype.addChampForm = function (item) {
+        var _this = this;
+        console.log(item);
+        this.ficheService.addChamp(item)
+            .subscribe(function (succ) {
+            _this.messageService.add({ severity: 'success', summary: 'Ajout Personnage', detail: succ.prenom + ' ' + succ.nom });
+        }, function (err) {
+            _this.messageService.add({ severity: 'error', summary: 'Ajout Personnage', detail: err });
+        });
     };
     FicheComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-fiche',
             template: __webpack_require__(/*! ./fiche.component.html */ "./src/app/fiche/fiche.component.html"),
-            styles: [__webpack_require__(/*! ./fiche.component.css */ "./src/app/fiche/fiche.component.css")]
+            styles: [__webpack_require__(/*! ./fiche.component.css */ "./src/app/fiche/fiche.component.css")],
+            providers: [primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_3__["MessageService"]]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_fiche_service__WEBPACK_IMPORTED_MODULE_2__["FicheService"], primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_3__["MessageService"]])
     ], FicheComponent);
     return FicheComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/fiche/fiche.service.ts":
+/*!****************************************!*\
+  !*** ./src/app/fiche/fiche.service.ts ***!
+  \****************************************/
+/*! exports provided: FicheService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FicheService", function() { return FicheService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/index */ "./node_modules/rxjs/index.js");
+/* harmony import */ var rxjs_index__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_index__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/internal/operators */ "./node_modules/rxjs/internal/operators/index.js");
+/* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var httpOptions = {
+    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Content-Type': 'application/json' })
+};
+var FicheService = /** @class */ (function () {
+    function FicheService(http) {
+        this.http = http;
+        this.champUrl = '/api/champ';
+    }
+    FicheService.prototype.addChamp = function (item) {
+        return this.http.post(this.champUrl, item, httpOptions)
+            .pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (champ) { return console.log("added hero w/ id=" + champ.techid); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('addHero')));
+    };
+    FicheService.prototype.handleError = function (operation, result) {
+        if (operation === void 0) { operation = 'operation'; }
+        return function (error) {
+            console.error(error);
+            console.log(operation + " failed: " + error.message);
+            return Object(rxjs_index__WEBPACK_IMPORTED_MODULE_2__["of"])(result);
+        };
+    };
+    FicheService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], FicheService);
+    return FicheService;
 }());
 
 
@@ -311,7 +439,7 @@ module.exports = "body{\r\n  background: #f2f2f2;\r\n  font-family: 'Open Sans',
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrap\">\n  <div class=\"search\">\n    <input type=\"text\" class=\"searchTerm\" placeholder=\"Recherche...\">\n    <button type=\"submit\" class=\"searchButton\">\n      <i class=\"fa fa-search\"></i>\n    </button>\n  </div>\n</div>\n\n<section>\n\n  <p-accordion [multiple]=\"true\">\n    <p-accordionTab *ngFor=\"let item of champList\">\n      <p-header>\n       {{item.nom}}\n        {{item.prenom}}\n       {{item.spe}}\n      </p-header>\n      {{item.description}}\n    </p-accordionTab>\n\n  </p-accordion>\n\n</section>\n"
+module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n<p-confirmDialog header=\"Confirmation\" icon=\"pi pi-exclamation-triangle\" width=\"425\"></p-confirmDialog>\n\n<app-search></app-search>\n\n<section>\n\n  <p-accordion [multiple]=\"true\">\n    <p-accordionTab *ngFor=\"let item of champList\">\n      <p-header>\n       {{item.nom}}\n       {{item.prenom}}\n       {{item.spe}}\n      </p-header>\n      {{item.description}}\n      <div>\n        Charts\n      </div>\n      <div>\n        <p-splitButton label=\"Edition\" icon=\"pi pi-check\" (onClick)=\"update(item)\" (onDropdownClick)=\"selectedChamp(item)\" [model]=\"items\" styleClass=\"ui-button-info\"></p-splitButton>\n      </div>\n    </p-accordionTab>\n\n  </p-accordion>\n\n</section>\n"
 
 /***/ }),
 
@@ -328,6 +456,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _home_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.service */ "./src/app/home/home.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/api */ "./node_modules/primeng/api.js");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(primeng_api__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/components/common/messageservice */ "./node_modules/primeng/components/common/messageservice.js");
+/* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -340,28 +472,70 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(homeService, route) {
+    function HomeComponent(homeService, route, confirmationService, router, messageService) {
         this.homeService = homeService;
         this.route = route;
+        this.confirmationService = confirmationService;
+        this.router = router;
+        this.messageService = messageService;
+        this.msgs = [];
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.data.subscribe(function (data) { return _this.champList = data.champListRes; });
+        this.items = [
+            { label: 'Suppression', icon: 'fa-close', command: function () { _this.delete(_this.champ); } },
+        ];
+    };
+    HomeComponent.prototype.selectedChamp = function (item) {
+        this.champ = item;
     };
     HomeComponent.prototype.getChampList = function () {
         var _this = this;
         this.homeService.getListChamp()
             .subscribe(function (champList) { return _this.champList = champList; });
     };
+    HomeComponent.prototype.update = function (champ) {
+        // routerlink to page FICHE filled with data
+        console.log('ICI update ', champ);
+    };
+    HomeComponent.prototype.delete = function (champ) {
+        var _this = this;
+        console.log('in delete', champ);
+        this.confirmationService.confirm({
+            message: 'Etes vous sur de vouloir supprimer ce personnage?',
+            header: 'Suppression',
+            icon: 'fa fa-trash',
+            accept: function () {
+                _this.homeService.deleteChamp(champ).subscribe(function (succ) {
+                    _this.champList = _this.champList.filter(function (c) { return c !== champ; });
+                    _this.messageService.add({ severity: 'success', summary: 'Suppression Personnage', detail: champ.prenom + ' ' + champ.nom });
+                }, function (err) {
+                    _this.messageService.add({ severity: 'error', summary: 'Suppression Personnage', detail: err.message });
+                });
+            },
+            reject: function () {
+                console.log('champ', champ);
+                _this.messageService.add({ severity: 'warning', summary: 'Suppression Personnage', detail: 'Annulé' });
+            }
+        });
+    };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")],
+            providers: [primeng_api__WEBPACK_IMPORTED_MODULE_3__["ConfirmationService"]]
         }),
         __metadata("design:paramtypes", [_home_service__WEBPACK_IMPORTED_MODULE_1__["HomeService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            primeng_api__WEBPACK_IMPORTED_MODULE_3__["ConfirmationService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__["MessageService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -438,7 +612,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/internal/operators */ "./node_modules/rxjs/internal/operators/index.js");
 /* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _message_message_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../message/message.service */ "./src/app/message/message.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -452,33 +625,38 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
+var httpOptions = {
+    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]({ 'Content-Type': 'application/json' })
+};
 var HomeService = /** @class */ (function () {
-    function HomeService(http, messageService) {
+    function HomeService(http) {
         this.http = http;
-        this.messageService = messageService;
-        this.listChamp = '/api/champ';
+        this.champUrl = '/api/champ';
     }
     HomeService.prototype.getListChamp = function () {
-        var _this = this;
-        return this.http.get(this.listChamp)
-            .pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(function (champ) { return _this.log("fetched list champ"); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError('getListChamp', [])));
+        return this.http.get(this.champUrl)
+            .pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(function (champ) { return console.log("fetched list champ"); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError('getListChamp', [])));
     };
-    HomeService.prototype.log = function (message) {
-        this.messageService.add('HomeService : ' + message);
+    HomeService.prototype.getChamp = function (techid) {
+        var url = this.champUrl + "/" + techid;
+        return this.http.get(url).pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(function (_) { return console.log("fetched champ id=" + techid); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError("getChamp techId=" + techid)));
+    };
+    HomeService.prototype.deleteChamp = function (champ) {
+        var techid = typeof champ === 'number' ? champ : champ.techid;
+        var url = this.champUrl + "/" + techid;
+        return this.http.delete(url, httpOptions).pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(function (_) { return console.log("deleted champ techid=" + techid); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.handleError('deleteChamp')));
     };
     HomeService.prototype.handleError = function (operation, result) {
-        var _this = this;
         if (operation === void 0) { operation = 'operation'; }
         return function (error) {
             console.error(error);
-            _this.log(operation + " failed: " + error.message);
-            return Object(rxjs_index__WEBPACK_IMPORTED_MODULE_1__["of"])(result);
+            console.log(operation + " failed: " + error.message);
+            return Object(rxjs_index__WEBPACK_IMPORTED_MODULE_1__["throwError"])(error);
         };
     };
     HomeService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"], _message_message_service__WEBPACK_IMPORTED_MODULE_4__["MessageService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]])
     ], HomeService);
     return HomeService;
 }());
@@ -487,10 +665,30 @@ var HomeService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/message/message.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/message/message.component.css ***!
-  \***********************************************/
+/***/ "./src/app/models/Champ.model.ts":
+/*!***************************************!*\
+  !*** ./src/app/models/Champ.model.ts ***!
+  \***************************************/
+/*! exports provided: Champ */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Champ", function() { return Champ; });
+var Champ = /** @class */ (function () {
+    function Champ() {
+    }
+    return Champ;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/search/search.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/search/search.component.css ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -498,29 +696,29 @@ module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/message/message.component.html":
-/*!************************************************!*\
-  !*** ./src/app/message/message.component.html ***!
-  \************************************************/
+/***/ "./src/app/search/search.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/search/search.component.html ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"messageService.messages.length\">\n\n  <h2>Messages</h2>\n  <button class=\"clear\"\n          (click)=\"messageService.clear()\">clear</button>\n  <div *ngFor='let message of messageService.messages'> {{message}} </div>\n\n</div>\n"
+module.exports = "<!--<div class=\"wrap\">-->\n  <!--<div class=\"search\">-->\n    <!--<input #searchbox id=\"searchbox\" (keyup)=\"search(searchbox.value)\" type=\"text\" class=\"searchTerm\" placeholder=\"Recherche...\">-->\n    <!--&lt;!&ndash;<button type=\"submit\" class=\"searchButton\">&ndash;&gt;-->\n      <!--&lt;!&ndash;<i class=\"fa fa-search\"></i>&ndash;&gt;-->\n    <!--&lt;!&ndash;</button>&ndash;&gt;-->\n  <!--</div>-->\n<!--</div>-->\n\n<p-autoComplete [(ngModel)]=\"text\" [suggestions]=\"seatchchamps\" (completeMethod)=\"search($event)\" field=\"nom\"></p-autoComplete>\n"
 
 /***/ }),
 
-/***/ "./src/app/message/message.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/message/message.component.ts ***!
-  \**********************************************/
-/*! exports provided: MessageComponent */
+/***/ "./src/app/search/search.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/search/search.component.ts ***!
+  \********************************************/
+/*! exports provided: SearchComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageComponent", function() { return MessageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchComponent", function() { return SearchComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _message_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./message.service */ "./src/app/message/message.service.ts");
+/* harmony import */ var _search_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search.service */ "./src/app/search/search.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -532,38 +730,54 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var MessageComponent = /** @class */ (function () {
-    function MessageComponent(messageService) {
-        this.messageService = messageService;
+var SearchComponent = /** @class */ (function () {
+    function SearchComponent(searchService) {
+        this.searchService = searchService;
     }
-    MessageComponent.prototype.ngOnInit = function () {
+    SearchComponent.prototype.ngOnInit = function () {
     };
-    MessageComponent = __decorate([
+    // search(term: string): void {
+    //   this.searchService.searchChamp(term).subscribe( result => this.champs = result);
+    // }
+    SearchComponent.prototype.search = function (event) {
+        var _this = this;
+        console.log('query.event', event.query);
+        this.searchService.searchChamp(event.query)
+            .subscribe(function (data) {
+            _this.seatchchamps = data;
+        });
+    };
+    SearchComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-message',
-            template: __webpack_require__(/*! ./message.component.html */ "./src/app/message/message.component.html"),
-            styles: [__webpack_require__(/*! ./message.component.css */ "./src/app/message/message.component.css")]
+            selector: 'app-search',
+            template: __webpack_require__(/*! ./search.component.html */ "./src/app/search/search.component.html"),
+            styles: [__webpack_require__(/*! ./search.component.css */ "./src/app/search/search.component.css")]
         }),
-        __metadata("design:paramtypes", [_message_service__WEBPACK_IMPORTED_MODULE_1__["MessageService"]])
-    ], MessageComponent);
-    return MessageComponent;
+        __metadata("design:paramtypes", [_search_service__WEBPACK_IMPORTED_MODULE_1__["SearchService"]])
+    ], SearchComponent);
+    return SearchComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/message/message.service.ts":
-/*!********************************************!*\
-  !*** ./src/app/message/message.service.ts ***!
-  \********************************************/
-/*! exports provided: MessageService */
+/***/ "./src/app/search/search.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/search/search.service.ts ***!
+  \******************************************/
+/*! exports provided: SearchService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageService", function() { return MessageService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchService", function() { return SearchService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/index */ "./node_modules/rxjs/index.js");
+/* harmony import */ var rxjs_index__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_index__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/internal/operators */ "./node_modules/rxjs/internal/operators/index.js");
+/* harmony import */ var rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -574,23 +788,37 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var MessageService = /** @class */ (function () {
-    function MessageService() {
-        this.messages = [];
+
+
+
+var SearchService = /** @class */ (function () {
+    function SearchService(http) {
+        this.http = http;
+        this.champUrl = '/api/champ';
     }
-    MessageService.prototype.add = function (message) {
-        this.messages.push(message);
+    SearchService.prototype.searchChamp = function (term) {
+        if (!term.trim()) {
+            return Object(rxjs_index__WEBPACK_IMPORTED_MODULE_2__["of"])([]);
+        }
+        console.log(term);
+        return this.http.get(this.champUrl + "/search/?nom=" + term)
+            .pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (result) { return console.log("found champ matching \"" + term + "\""); }), Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('searchChamp', [])));
     };
-    MessageService.prototype.clear = function () {
-        this.messages = [];
+    SearchService.prototype.handleError = function (operation, result) {
+        if (operation === void 0) { operation = 'operation'; }
+        return function (error) {
+            console.error(error);
+            console.log(operation + " failed: " + error.message);
+            return Object(rxjs_index__WEBPACK_IMPORTED_MODULE_2__["throwError"])(error);
+        };
     };
-    MessageService = __decorate([
+    SearchService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
         }),
-        __metadata("design:paramtypes", [])
-    ], MessageService);
-    return MessageService;
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], SearchService);
+    return SearchService;
 }());
 
 

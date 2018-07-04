@@ -24,7 +24,6 @@ public class Champ {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "techid")
     private Long techid;
-    
     private String nom;
     private String prenom;
     private Integer age; 
