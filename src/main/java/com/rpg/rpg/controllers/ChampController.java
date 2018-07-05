@@ -59,16 +59,12 @@ public class ChampController {
     }
     
     @RequestMapping(value="/search", method=RequestMethod.GET)
-    public Set<String> testNameRessemble(@RequestParam("nom") String nom) {
+    public List<Champ> nomRessemble(@RequestParam("nom") String nom) {
         
         List<Champ> listChamp = new ArrayList<>();
-        Set<String> setChamp = new HashSet<>();
         listChamp = champRepo.findByNomIgnoreCaseContaining(nom);
-        
-        for(Champ item : listChamp){
-            setChamp.add(item.getNom());
-        }
-        return setChamp;
+
+        return listChamp;
     }
 
 }
