@@ -47,9 +47,16 @@ public class ChampController {
     
     @RequestMapping(method=RequestMethod.POST)
     public Champ saveChamp(@RequestBody Champ champItem) {
-        Champ champ = new Champ();
-        champItem.setTechid(champ.getTechid());
-        return champRepo.save(champItem);
+      
+        if(champItem.getTechid() == null){
+            Champ champ = new Champ();
+            champItem.setTechid(champ.getTechid());
+            return champRepo.save(champItem);
+        } else {
+            return champRepo.save(champItem);
+        }
+
+
     }
         
     @Transactional
