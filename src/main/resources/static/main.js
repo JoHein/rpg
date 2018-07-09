@@ -186,19 +186,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! primeng/autocomplete */ "./node_modules/primeng/autocomplete.js");
 /* harmony import */ var primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
-/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
-/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
-/* harmony import */ var _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fiche/fiche.service */ "./src/app/fiche/fiche.service.ts");
-/* harmony import */ var _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fiche/fiche.resolver */ "./src/app/fiche/fiche.resolver.ts");
-/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
+/* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! primeng/chart */ "./node_modules/primeng/chart.js");
+/* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(primeng_chart__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
+/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
+/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
+/* harmony import */ var _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fiche/fiche.service */ "./src/app/fiche/fiche.service.ts");
+/* harmony import */ var _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fiche/fiche.resolver */ "./src/app/fiche/fiche.resolver.ts");
+/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -234,9 +237,9 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_20__["HomeComponent"],
-                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_23__["FicheComponent"],
-                _search_search_component__WEBPACK_IMPORTED_MODULE_26__["SearchComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_21__["HomeComponent"],
+                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_24__["FicheComponent"],
+                _search_search_component__WEBPACK_IMPORTED_MODULE_27__["SearchComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -256,13 +259,14 @@ var AppModule = /** @class */ (function () {
                 primeng_growl__WEBPACK_IMPORTED_MODULE_15__["GrowlModule"],
                 primeng_splitbutton__WEBPACK_IMPORTED_MODULE_17__["SplitButtonModule"],
                 primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__["ConfirmDialogModule"],
-                primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__["AutoCompleteModule"]
+                primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__["AutoCompleteModule"],
+                primeng_chart__WEBPACK_IMPORTED_MODULE_20__["ChartModule"]
             ],
             providers: [
-                _home_home_service__WEBPACK_IMPORTED_MODULE_21__["HomeService"],
-                _home_home_resolver__WEBPACK_IMPORTED_MODULE_22__["HomeResolver"],
-                _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_24__["FicheService"],
-                _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_25__["FicheResolver"],
+                _home_home_service__WEBPACK_IMPORTED_MODULE_22__["HomeService"],
+                _home_home_resolver__WEBPACK_IMPORTED_MODULE_23__["HomeResolver"],
+                _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_25__["FicheService"],
+                _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_26__["FicheResolver"],
                 primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16__["MessageService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -293,7 +297,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n\n<form #champForm=\"ngForm\">\n<section>\n<div class=\"ui-inputgroup\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\"></i>\n  </span>\n    <span class=\"ui-float-label\">\n      <input required name=\"nom\" [(ngModel)]=\"champ.nom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Nom</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input required name=\"prenom\" [(ngModel)]=\"champ.prenom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Prenom</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-top: 1.5em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.age\" name=\"age\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Age</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <div style=\"position: relative; left: 20px; top: 5px;\">\n    <p-inputSwitch  onLabel=\"Femelle\" offLabel=\"Male\" [(ngModel)]=\"champ.gender\" name=\"gender\" ></p-inputSwitch>\n  </div>\n  </div>\n</section>\n\n<section style=\"margin-top: 1.5em; display: inline-block;\">\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user-ninja\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.agilite\" name=\"agilite\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Agilité</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-gavel\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.force\"  name=\"force\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Force</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-book\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.intelect\" name=\"intelect\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Intelligence</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-magic\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.magie\"  name=\"magie\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Magie</label>\n    </span>\n</div>\n<div class=\"ui-inputgroup\" >\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-hourglass-half\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.endurance\" name=\"endurance\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Endurance</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-grin-stars\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.charisme\" name=\"charisme\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Charisme</label>\n    </span>\n\n</div>\n</section>\n\n<section style=\"margin-top: 1.5em; display: inline-block;vertical-align: top;\">\n  <div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fab fa-pied-piper-hat\"></i>\n  </span>\n      <p-dropdown  [options]=\"spe\" [(ngModel)]=\"champ.spe\" name=\"spe\" [style]=\"{'width':'187px'}\" editable=\"true\" placeholder=\"Spécification\"></p-dropdown>\n  </div>\n\n  <div class=\"ui-inputgroup\" >\n    <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;height: 84px;\">\n      <i class=\"fa fa-feather-alt\"></i>\n    </span>\n    <span class=\"ui-float-label\">\n        <textarea [(ngModel)]=\"champ.description\" name=\"description\"  id=\"float-label\" pInputTextarea style=\"border-right: 1px solid rgb(214, 214, 214);height: 84px;\"></textarea>\n        <label for=\"float-label\">Description</label>\n    </span>\n  </div>\n</section>\n  <section style=\"margin-top: 1.5em; display: inline-block;vertical-align: top;border: 1px solid lightslategrey;\">\n    Charts\n  </section>\n</form>\n\n<div>\n  <p-button [disabled]=\"!champForm.form.valid\" (onClick)=\"addChampForm(champ)\" icon=\"pi pi-check\" label=\"Enregistrer\"></p-button>\n</div>\n"
+module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n\n<form #champForm=\"ngForm\">\n<section>\n<div class=\"ui-inputgroup\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\"></i>\n  </span>\n    <span class=\"ui-float-label\">\n      <input required name=\"nom\" [(ngModel)]=\"champ.nom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Nom</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input required name=\"prenom\" [(ngModel)]=\"champ.prenom\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Prenom</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-top: 1.5em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.age\" name=\"age\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Age</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user\" ></i>\n  </span>\n  <div style=\"position: relative; left: 20px; top: 5px;\">\n    <p-inputSwitch  onLabel=\"Femelle\" offLabel=\"Male\" [(ngModel)]=\"champ.gender\" name=\"gender\" ></p-inputSwitch>\n  </div>\n  </div>\n</section>\n\n<section style=\"margin-top: 1.5em; display: inline-block;\">\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-user-ninja\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.agilite\" (input)=\"updateRadar()\" name=\"agilite\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Agilité</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-gavel\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.force\" (input)=\"updateRadar()\" name=\"force\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Force</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" style=\"margin-bottom: 1em;\">\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-book\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.intelect\" (input)=\"updateRadar()\" name=\"intelect\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Intelligence</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-magic\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.magie\" (input)=\"updateRadar()\" name=\"magie\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Magie</label>\n    </span>\n</div>\n\n<div class=\"ui-inputgroup\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-hourglass-half\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input  [(ngModel)]=\"champ.endurance\" (input)=\"updateRadar()\" name=\"endurance\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Endurance</label>\n    </span>\n\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fa fa-grin-stars\" ></i>\n  </span>\n  <span class=\"ui-float-label\">\n      <input [(ngModel)]=\"champ.charisme\" (input)=\"updateRadar()\" name=\"charisme\" id=\"float-label\" type=\"text\" pKeyFilter=\"alphanum\" pInputText style=\"border-right: 1px solid rgb(214, 214, 214);\">\n      <label for=\"float-label\">Charisme</label>\n    </span>\n\n</div>\n\n\n  <div class=\"ui-inputgroup\" style=\"margin-top: 1em;\" >\n  <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;\">\n    <i class=\"fab fa-pied-piper-hat\"></i>\n  </span>\n    <p-dropdown  [options]=\"spe\" [(ngModel)]=\"champ.spe\" name=\"spe\" [style]=\"{'width':'190px'}\" editable=\"true\" placeholder=\"Spécification\"></p-dropdown>\n  </div>\n\n    <div class=\"ui-inputgroup\" style=\"margin-top: 1em;\">\n\n    <span class=\"ui-inputgroup-addon\" style=\"position: relative; left: 2px; z-index: 10;height: 84px;\">\n      <i style=\"padding-top: 2em;\" class=\"fa fa-feather-alt\"></i>\n    </span>\n    <span class=\"ui-float-label\">\n        <textarea [rows]=\"5\" [cols]=\"48\" [(ngModel)]=\"champ.description\" name=\"description\"  id=\"float-label\" pInputTextarea style=\"border-right: 1px solid rgb(214, 214, 214);height: 84px;\"></textarea>\n        <label for=\"float-label\">Description</label>\n    </span>\n\n  </div>\n\n</section>\n\n  <section style=\"margin-top: 1.5em; display: inline-block; position: absolute; top: 80px; margin-left: 2em;\">\n\n    <p-chart type=\"radar\" [data]=\"data\" [options]=\"options\" width=\"50vw\" height=\"50vh\"></p-chart>\n  </section>\n</form>\n\n<div style=\"margin-top: 1em;\">\n  <p-button [disabled]=\"!champForm.form.valid\" (onClick)=\"addChampForm(champ)\" icon=\"pi pi-check\" label=\"Enregistrer\"></p-button>\n</div>\n"
 
 /***/ }),
 
@@ -349,12 +353,83 @@ var FicheComponent = /** @class */ (function () {
                 console.log('cahmp coming from data :: ', data);
                 console.log('cahmp coming from data :: ', _this.champ);
                 _this.champ = data.champ;
+                _this.updateRadar();
             }
             else {
                 _this.champ = new _models_Champ_model__WEBPACK_IMPORTED_MODULE_1__["Champ"];
                 console.log('si pas de techId:: ', _this.champ);
+                // this.data = {
+                //   labels: ['Agilité', 'Force', 'Intelligence', 'Magie', 'Endurance', 'Charisme'],
+                //   datasets: [
+                //     {
+                //       label: 'Stats',
+                //       backgroundColor: 'rgba(86, 97, 255,0.2)',
+                //       borderColor: 'rgba(11, 22, 183,1)',
+                //       pointBackgroundColor: 'rgba(11, 22, 183,1)',
+                //       pointBorderColor: '#fff',
+                //       pointHoverBackgroundColor: '#fff',
+                //       pointHoverBorderColor: 'rgba(11, 22, 183,1)',
+                //       data: [0, 0, 0, 0, 0, 0]
+                //     }
+                //   ]
+                // };
+                //
+                // this.options = {
+                //   spanGaps: false,
+                //   elements: {
+                //     line: {
+                //       tension: 0.000001
+                //     }
+                //   },
+                //   scale: {
+                //     ticks: {
+                //       beginAtZero: true
+                //     }
+                //   },
+                //   plugins: {
+                //     filler: {
+                //       propagate: false
+                //     },
+                //     'samples-filler-analyser': {
+                //       target: 'chart-analyser'
+                //     }
+                //   }
+                // };
+                _this.updateRadar();
             }
         });
+    };
+    FicheComponent.prototype.updateRadar = function () {
+        this.data = {
+            labels: ['Agilité', 'Force', 'Intelligence', 'Magie', 'Endurance', 'Charisme'],
+            datasets: [
+                {
+                    label: 'Stats',
+                    backgroundColor: 'rgba(86, 97, 255,0.2)',
+                    borderColor: 'rgba(11, 22, 183,1)',
+                    pointBackgroundColor: 'rgba(73, 181, 244,1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(11, 22, 183,1)',
+                    pointRadius: 5,
+                    pointHoverRadius: 6,
+                    data: [this.champ.agilite, this.champ.force, this.champ.intelect, this.champ.magie, this.champ.endurance, this.champ.charisme]
+                }
+            ]
+        };
+        this.options = {
+            spanGaps: false,
+            elements: {
+                line: {
+                    tension: 0.000001
+                },
+            },
+            scale: {
+                ticks: {
+                    beginAtZero: true
+                }
+            },
+        };
     };
     FicheComponent.prototype.addChampForm = function (item) {
         var _this = this;
