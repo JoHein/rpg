@@ -14606,7 +14606,7 @@ module.exports = "@charset \"UTF-8\";\n.ui-widget {\n  font-family: \"Roboto\", 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n.ui-accordion .ui-accordion-header a { text-decoration : none !important; }\np-accordionTab:nth-child(odd) .ui-accordion-header {\n  background: lightsteelblue;\n  border:none;\n  border-radius: 0;\n}\np-accordionTab:nth-child(even) .ui-accordion-header {\n  background: white;\n  border:none;\n  border-radius: 0;\n}\np-accordionTab:nth-child(odd) .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover {\n  background: #72abdb;\n  border:none;\n  border-radius: 0;\n}\np-accordionTab:nth-child(even) .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover {\n  background: #ededed;\n  border:none;\n  border-radius: 0;\n}\n"
 
 /***/ }),
 
