@@ -17,6 +17,8 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  */
 public interface ChampRepository extends JpaRepository<Champ, Long>, JpaSpecificationExecutor<Champ> {
     
-    List<Champ> findByNomIgnoreCaseContaining(String nom);
+    List<Champ> findAllByOrderByNomAsc();
+
+    List<Champ> findByNomIgnoreCaseContainingOrderByNomAsc(String nom);
     
 }

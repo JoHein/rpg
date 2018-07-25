@@ -190,19 +190,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(primeng_chart__WEBPACK_IMPORTED_MODULE_20__);
 /* harmony import */ var primeng_card__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! primeng/card */ "./node_modules/primeng/card.js");
 /* harmony import */ var primeng_card__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(primeng_card__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
-/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
-/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
-/* harmony import */ var _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./fiche/fiche.service */ "./src/app/fiche/fiche.service.ts");
-/* harmony import */ var _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fiche/fiche.resolver */ "./src/app/fiche/fiche.resolver.ts");
-/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
+/* harmony import */ var primeng_datascroller__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! primeng/datascroller */ "./node_modules/primeng/datascroller.js");
+/* harmony import */ var primeng_datascroller__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(primeng_datascroller__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _home_home_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./home/home.service */ "./src/app/home/home.service.ts");
+/* harmony import */ var _home_home_resolver__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./home/home.resolver */ "./src/app/home/home.resolver.ts");
+/* harmony import */ var _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./fiche/fiche.component */ "./src/app/fiche/fiche.component.ts");
+/* harmony import */ var _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./fiche/fiche.service */ "./src/app/fiche/fiche.service.ts");
+/* harmony import */ var _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./fiche/fiche.resolver */ "./src/app/fiche/fiche.resolver.ts");
+/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -240,9 +245,9 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_22__["HomeComponent"],
-                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_25__["FicheComponent"],
-                _search_search_component__WEBPACK_IMPORTED_MODULE_28__["SearchComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_24__["HomeComponent"],
+                _fiche_fiche_component__WEBPACK_IMPORTED_MODULE_27__["FicheComponent"],
+                _search_search_component__WEBPACK_IMPORTED_MODULE_30__["SearchComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -264,13 +269,15 @@ var AppModule = /** @class */ (function () {
                 primeng_confirmdialog__WEBPACK_IMPORTED_MODULE_18__["ConfirmDialogModule"],
                 primeng_autocomplete__WEBPACK_IMPORTED_MODULE_19__["AutoCompleteModule"],
                 primeng_chart__WEBPACK_IMPORTED_MODULE_20__["ChartModule"],
-                primeng_card__WEBPACK_IMPORTED_MODULE_21__["CardModule"]
+                primeng_card__WEBPACK_IMPORTED_MODULE_21__["CardModule"],
+                primeng_datascroller__WEBPACK_IMPORTED_MODULE_22__["DataScrollerModule"],
+                ngx_order_pipe__WEBPACK_IMPORTED_MODULE_23__["OrderModule"]
             ],
             providers: [
-                _home_home_service__WEBPACK_IMPORTED_MODULE_23__["HomeService"],
-                _home_home_resolver__WEBPACK_IMPORTED_MODULE_24__["HomeResolver"],
-                _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_26__["FicheService"],
-                _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_27__["FicheResolver"],
+                _home_home_service__WEBPACK_IMPORTED_MODULE_25__["HomeService"],
+                _home_home_resolver__WEBPACK_IMPORTED_MODULE_26__["HomeResolver"],
+                _fiche_fiche_service__WEBPACK_IMPORTED_MODULE_28__["FicheService"],
+                _fiche_fiche_resolver__WEBPACK_IMPORTED_MODULE_29__["FicheResolver"],
                 primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_16__["MessageService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -592,7 +599,7 @@ var FicheService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body{\r\n  background: #f2f2f2;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.search {\r\n  width: 100%;\r\n  position: relative\r\n}\r\n\r\n.searchTerm {\r\n  float: left;\r\n  width: 100%;\r\n  border: 3px solid #474747;\r\n  padding: 5px;\r\n  height: 2em;\r\n  border-radius: 5px;\r\n  outline: none;\r\n  color: #9DBFAF;\r\n}\r\n\r\n.searchTerm:focus{\r\n  color: #00B4CC;\r\n}\r\n\r\n.searchButton {\r\n  position: absolute;\r\n  right: -30px;\r\n  width: 40px;\r\n  height: 2em;\r\n  border: 1px solid #474747;\r\n  background: #474747;\r\n  text-align: center;\r\n  color: #fff;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\n/*Resize the wrap to see the search bar change!*/\r\n\r\n.wrap{\r\n  width: 15%;\r\n  position: relative;\r\n  left: 10%;\r\n  padding-top:3em;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n  margin-bottom: 3em;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 2em;\r\n}\r\n\r\n.statstable tr th{\r\n  height: 2em;\r\n  color: #ffffff;\r\n}\r\n\r\n.statstable td{\r\n  height: 2em;\r\n  border-bottom: 1px solid #e0e3e5;\r\n}\r\n\r\nth {\r\n  width:8em;\r\n  text-align:center;\r\n  background-color: cornflowerblue;\r\n\r\n}\r\n\r\ntd {\r\n  text-align:center;\r\n}\r\n\r\nimg {\r\n  width: 2.3%;\r\n  vertical-align: middle;\r\n  margin-right: 0.5em;\r\n  margin-left:0.5em;\r\n}\r\n\r\n/*.ui-accordion .ui-accordion-header a:nth-child(odd) {*/\r\n\r\n/*background: red;*/\r\n\r\n/*}*/\r\n\r\n/*.ui-accordion .ui-accordion-header a:nth-child(even) {*/\r\n\r\n/*background: blue;*/\r\n\r\n/*}*/\r\n\r\n/*.ui-accordion .ui-accordion-header a { text-decoration : none !important; }*/\r\n\r\n\r\n"
+module.exports = "body{\r\n  background: #f2f2f2;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.search {\r\n  width: 100%;\r\n  position: relative\r\n}\r\n\r\n.searchTerm {\r\n  float: left;\r\n  width: 100%;\r\n  border: 3px solid #474747;\r\n  padding: 5px;\r\n  height: 2em;\r\n  border-radius: 5px;\r\n  outline: none;\r\n  color: #9DBFAF;\r\n}\r\n\r\n.searchTerm:focus{\r\n  color: #00B4CC;\r\n}\r\n\r\n.searchButton {\r\n  position: absolute;\r\n  right: -30px;\r\n  width: 40px;\r\n  height: 2em;\r\n  border: 1px solid #474747;\r\n  background: #474747;\r\n  text-align: center;\r\n  color: #fff;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\n/*Resize the wrap to see the search bar change!*/\r\n\r\n.wrap{\r\n  width: 15%;\r\n  position: relative;\r\n  left: 10%;\r\n  padding-top:3em;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n  margin-bottom: 3em;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 2em;\r\n}\r\n\r\n.statstable tr th{\r\n  height: 2em;\r\n  color: #ffffff;\r\n}\r\n\r\n.statstable td{\r\n  height: 2em;\r\n  border-bottom: 1px solid #e0e3e5;\r\n}\r\n\r\nth {\r\n  width:8em;\r\n  text-align:center;\r\n  background-color: cornflowerblue;\r\n\r\n}\r\n\r\ntd {\r\n  text-align:center;\r\n}\r\n\r\nimg {\r\n  width: 2.3%;\r\n  vertical-align: middle;\r\n  margin-right: 0.5em;\r\n  margin-left:0.5em;\r\n}\r\n\r\nbutton{\r\n  margin-left: 0.6em;\r\n}\r\n\r\n.arrowsort {\r\n  border: solid white;\r\n  border-width: 0 3px 3px 0;\r\n  display: inline-block;\r\n  padding: 3px;\r\n}\r\n\r\n.up {\r\n  transform: rotate(-135deg);\r\n  -webkit-transform: rotate(-135deg);\r\n  margin-right: 0.7em;\r\n}\r\n\r\n.down {\r\n  transform: rotate(45deg);\r\n  -webkit-transform: rotate(45deg);\r\n  margin-right: 0.7em;\r\n\r\n}\r\n\r\nbutton{\r\n  background-color: #5bc0de;\r\n  border-color: #5bc0de;\r\n  color: #fff;\r\n  overflow: hidden;\r\n  margin: 10px;\r\n  padding: 12px 12px;\r\n  cursor: pointer;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n  transition: all 150ms linear;\r\n  text-align: center;\r\n  white-space: nowrap;\r\n  text-decoration: none !important;\r\n  border: 0 none;\r\n  border-radius: 4px;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  line-height: 1.3;\r\n  -webkit-appearance: none;\r\n  -moz-appearance: none;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex: 0 0 160px;\r\n  display: inline-block;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: #46b8da;\r\n  border-color: #5bc0de;\r\n}\r\n\r\n/*.ui-accordion .ui-accordion-header a:nth-child(odd) {*/\r\n\r\n/*background: red;*/\r\n\r\n/*}*/\r\n\r\n/*.ui-accordion .ui-accordion-header a:nth-child(even) {*/\r\n\r\n/*background: blue;*/\r\n\r\n/*}*/\r\n\r\n/*.ui-accordion .ui-accordion-header a { text-decoration : none !important; }*/\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -603,7 +610,7 @@ module.exports = "body{\r\n  background: #f2f2f2;\r\n  font-family: 'Open Sans',
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n<p-confirmDialog header=\"Confirmation\" icon=\"pi pi-exclamation-triangle\" width=\"425\"></p-confirmDialog>\n\n<app-search [listchampssearch]=\"listchampssearch\" (bized)=\"onBized($event)\"></app-search>\n\n<section>\n\n  <p-accordion [multiple]=\"true\" (onOpen)=\"onTabOpen($event)\">\n    <p-accordionTab *ngFor=\"let item of champList; let i = index;\">\n      <p-header>\n\n        <img *ngIf=\"item.spe === 'PRETRE'\" src=\"../../assets/images/pope-crown.svg\" alt=\"priest\">\n        <img *ngIf=\"item.spe === 'GUERRIER'\" src=\"../../assets/images/crossed-swords.svg\" alt=\"war\">\n        <img *ngIf=\"item.spe === 'BANDIT'\" src=\"../../assets/images/hood.svg\" alt=\"bandit\">\n        <img *ngIf=\"item.spe === 'SCOUT'\" src=\"../../assets/images/high-shot.svg\" alt=\"scout\">\n        <img *ngIf=\"item.spe === 'MAGE'\" src=\"../../assets/images/pointy-hat.svg\" alt=\"mage\">\n\n        {{item.nom}} {{item.prenom}}\n      </p-header>\n\n      <div class=\"ui-g\">\n        <div class=\"ui-g-7 ui-g-nopad\">\n          <div class=\"ui-g-12\">\n            <h5>{{item.spe}}</h5>\n            <table class=\"statstable\">\n              <tbody>\n                <tr>\n                  <th>Agilité</th>\n                  <th>Force</th>\n                  <th>Intélligence</th>\n                  <th>Magie</th>\n                  <th>Endurance</th>\n                  <th>Charisme</th>\n                </tr>\n                <tr>\n                  <td>{{item.agilite}}</td>\n                  <td>{{item.force}}</td>\n                  <td>{{item.intelect}}</td>\n                  <td>{{item.magie}}</td>\n                  <td>{{item.endurance}}</td>\n                  <td>{{item.charisme}}</td>\n                </tr>\n              </tbody>\n            </table>\n\n          </div>\n          <div class=\"ui-g-12\">\n\n            <p-card>\n            <table>\n              <tbody>\n              <tr>\n                <th style=\"text-align: left; background-color: white;\">\n                  Déscription\n                </th>\n              </tr>\n              <tr>\n                <td style=\"text-align: left\">{{item.description}}</td>\n              </tr>\n              </tbody>\n            </table>\n            </p-card>\n\n          </div>\n\n        </div>\n\n        <div class=\"ui-g-5\">\n\n          <p-card>\n            <div>\n              <p-chart type=\"radar\" [data]=\"listDataGraph[i]\" [options]=\"options\" width=\"30vw\" height=\"30vh\"></p-chart>\n            </div>\n          </p-card>\n\n        </div>\n\n      </div>\n\n      <div>\n        <p-splitButton label=\"Edition\" icon=\"pi pi-check\" (onClick)=\"update(item)\" (onDropdownClick)=\"selectedChamp(item)\" [model]=\"items\" styleClass=\"ui-button-info\"></p-splitButton>\n      </div>\n    </p-accordionTab>\n\n  </p-accordion>\n\n</section>\n"
+module.exports = "\n<p-growl [(value)]=\"msgs\"></p-growl>\n<p-confirmDialog header=\"Confirmation\" icon=\"pi pi-exclamation-triangle\" width=\"425\"></p-confirmDialog>\n\n<app-search [listchampssearch]=\"listchampssearch\" (bized)=\"onBized($event)\"></app-search>\n\n<section>\n\n  <button  (click)=\"orderByDate('spe')\">\n    <i [ngClass]=\"{'arrowsort up': order && itemOrder==='spe'}\"\n    ></i>\n    <i [ngClass]=\"{'arrowsort down': !order && itemOrder==='spe'}\"></i>\n    Spé</button>\n  <!--[ngClass]=\"{'arrowsort down':!order,'arrowsort up':order }\" -->\n\n  <button   (click)=\"orderByDate('nom')\">\n    <i [ngClass]=\"{'arrowsort up': order && itemOrder==='nom'}\"\n    ></i>\n    <i [ngClass]=\"{'arrowsort down': !order && itemOrder==='nom'}\"></i>\n    Nom\n  </button>\n  <button (click)=\"orderByDate('date')\">\n    <i [ngClass]=\"{'arrowsort up': order && itemOrder==='date'}\"\n    ></i>\n    <i [ngClass]=\"{'arrowsort down': !order && itemOrder==='date'}\"></i>\n    Date\n  </button>\n\n\n  <p-dataScroller [value]=\"champList\" [rows]=\"10\" [inline]=\"true\" scrollHeight=\"2000px\">\n    <ng-template let-item pTemplate=\"item\" let-i=\"index\">\n      <p-accordion [multiple]=\"true\" (onOpen)=\"onTabOpen(i)\">\n        <p-accordionTab >\n          <p-header>\n\n            <img *ngIf=\"item.spe === 'PRETRE'\" src=\"../../assets/images/pope-crown.svg\" alt=\"priest\">\n            <img *ngIf=\"item.spe === 'GUERRIER'\" src=\"../../assets/images/crossed-swords.svg\" alt=\"war\">\n            <img *ngIf=\"item.spe === 'BANDIT'\" src=\"../../assets/images/hood.svg\" alt=\"bandit\">\n            <img *ngIf=\"item.spe === 'SCOUT'\" src=\"../../assets/images/high-shot.svg\" alt=\"scout\">\n            <img *ngIf=\"item.spe === 'MAGE'\" src=\"../../assets/images/pointy-hat.svg\" alt=\"mage\">\n\n            {{item.nom}} {{item.prenom}} - {{item.date | date: \"dd / MM / y\" }}\n          </p-header>\n\n          <div class=\"ui-g\">\n            <div class=\"ui-g-7 ui-g-nopad\">\n              <div class=\"ui-g-12\">\n                <h5>{{item.spe}}</h5>\n                <table class=\"statstable\">\n                  <tbody>\n                  <tr>\n                    <th>Agilité</th>\n                    <th>Force</th>\n                    <th>Intélligence</th>\n                    <th>Magie</th>\n                    <th>Endurance</th>\n                    <th>Charisme</th>\n                  </tr>\n                  <tr>\n                    <td>{{item.agilite}}</td>\n                    <td>{{item.force}}</td>\n                    <td>{{item.intelect}}</td>\n                    <td>{{item.magie}}</td>\n                    <td>{{item.endurance}}</td>\n                    <td>{{item.charisme}}</td>\n                  </tr>\n                  </tbody>\n                </table>\n\n              </div>\n              <div class=\"ui-g-12\">\n\n                <p-card>\n                  <table>\n                    <tbody>\n                    <tr>\n                      <th style=\"text-align: left; background-color: white;\">\n                        Déscription\n                      </th>\n                    </tr>\n                    <tr>\n                      <td style=\"text-align: left\">{{item.description}}</td>\n                    </tr>\n                    </tbody>\n                  </table>\n                </p-card>\n\n              </div>\n\n            </div>\n\n            <div class=\"ui-g-5\">\n\n              <p-card>\n                <div>\n                  <p-chart type=\"radar\" [data]=\"listDataGraph[i]\" [options]=\"options\" width=\"30vw\" height=\"30vh\"></p-chart>\n                </div>\n              </p-card>\n\n            </div>\n\n          </div>\n\n          <div>\n            <p-splitButton label=\"Edition\" icon=\"pi pi-check\" (onClick)=\"update(item)\" (onDropdownClick)=\"selectedChamp(item)\" [model]=\"items\" styleClass=\"ui-button-info\"></p-splitButton>\n          </div>\n        </p-accordionTab>\n\n      </p-accordion>\n    </ng-template>\n  </p-dataScroller>\n\n\n\n\n</section>\n"
 
 /***/ }),
 
@@ -624,6 +631,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(primeng_api__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/components/common/messageservice */ "./node_modules/primeng/components/common/messageservice.js");
 /* harmony import */ var primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/ngx-order-pipe.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -639,15 +647,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(homeService, route, confirmationService, router, messageService) {
+    function HomeComponent(homeService, route, confirmationService, router, messageService, orderPipe) {
         this.homeService = homeService;
         this.route = route;
         this.confirmationService = confirmationService;
         this.router = router;
         this.messageService = messageService;
+        this.orderPipe = orderPipe;
         this.msgs = [];
         this.listDataGraph = [];
+        this.order = false;
+        this.itemOrder = '';
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -685,12 +697,28 @@ var HomeComponent = /** @class */ (function () {
         });
     };
     HomeComponent.prototype.onBized = function (listchampssearch) {
+        var _this = this;
         console.log('in controller dat is not', listchampssearch);
         this.champList = [];
-        this.champList = listchampssearch;
+        if (listchampssearch === undefined || listchampssearch.length === 0) {
+            this.homeService.getListChamp().subscribe(function (data) { return _this.champList = data; });
+        }
+        else {
+            this.champList = listchampssearch;
+        }
     };
-    HomeComponent.prototype.onTabOpen = function (event) {
-        console.log(event.index);
+    HomeComponent.prototype.orderByDate = function (item) {
+        if (this.order) {
+            this.order = false;
+        }
+        else {
+            this.order = true;
+        }
+        this.itemOrder = item;
+        this.champList = this.orderPipe.transform(this.champList, item, this.order);
+    };
+    HomeComponent.prototype.onTabOpen = function (index) {
+        console.log('index event :', index);
         this.data = {
             labels: ['Agilité', 'Force', 'Intelligence', 'Magie', 'Endurance', 'Charisme'],
             datasets: [
@@ -704,8 +732,8 @@ var HomeComponent = /** @class */ (function () {
                     pointHoverBorderColor: 'rgba(11, 22, 183,1)',
                     pointRadius: 5,
                     pointHoverRadius: 6,
-                    data: [this.champList[event.index].agilite, this.champList[event.index].force, this.champList[event.index].intelect,
-                        this.champList[event.index].magie, this.champList[event.index].endurance, this.champList[event.index].charisme]
+                    data: [this.champList[index].agilite, this.champList[index].force, this.champList[index].intelect,
+                        this.champList[index].magie, this.champList[index].endurance, this.champList[index].charisme]
                 }
             ]
         };
@@ -722,7 +750,7 @@ var HomeComponent = /** @class */ (function () {
                 }
             },
         };
-        this.listDataGraph[event.index] = this.data;
+        this.listDataGraph[index] = this.data;
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -735,7 +763,8 @@ var HomeComponent = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
             primeng_api__WEBPACK_IMPORTED_MODULE_3__["ConfirmationService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__["MessageService"]])
+            primeng_components_common_messageservice__WEBPACK_IMPORTED_MODULE_4__["MessageService"],
+            ngx_order_pipe__WEBPACK_IMPORTED_MODULE_5__["OrderPipe"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -899,7 +928,7 @@ module.exports = ".searchButton {\r\n  position: absolute;\r\n  right: -80px;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrap\"  style=\"position: relative; z-index: 10;\">\n  <div class=\"search\">\n    <p-autoComplete  #box class=\"searchTerm\" [minLength]=\"1\" [suggestions]=\"searchchamps\" (completeMethod)=\"search($event)\"\n\n                     (keyup.enter)=\"onEnter(box.value)\"></p-autoComplete>\n\n    <button class=\"searchButton\" (click)=\"updateList()\">\n      <i class=\"fa fa-search\"></i>\n    </button>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"wrap\"  style=\"position: relative; z-index: 10;\">\n  <div class=\"search\">\n    <p-autoComplete  [(ngModel)]=\"value\" class=\"searchTerm\" [minLength]=\"1\" [suggestions]=\"searchchamps\" [autoHighlight]=\"true\"\n                     (onClear)=\"clearField()\"\n                     (completeMethod)=\"search()\"\n                     (keyup.enter)=\"search()\"\n                     (keydown.Tab)=\"search()\"></p-autoComplete>\n\n    <button class=\"searchButton\" (click)=\"updateList()\">\n      <i class=\"fa fa-search\"></i>\n    </button>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -938,27 +967,15 @@ var SearchComponent = /** @class */ (function () {
     }
     SearchComponent.prototype.ngOnInit = function () {
     };
-    SearchComponent.prototype.search = function (event) {
+    SearchComponent.prototype.search = function () {
         var _this = this;
-        // console.log('query.event', event.query);
-        console.log('value', this.value);
-        if (this.value) {
-            this.searchService.searchChamp(this.value)
-                .subscribe(function (data) {
-                _this.listchampssearch = data;
-                console.log('data du value', data);
-                _this.transfert(data);
-                _this.value = '';
-            });
-        }
-        else {
-            this.searchService.searchChamp(event.query)
-                .subscribe(function (data) {
-                _this.listchampssearch = data;
-                console.log('data du query', data);
-                _this.transfert(data);
-            });
-        }
+        this.searchService.searchChamp(this.value)
+            .subscribe(function (data) {
+            _this.listchampssearch = data;
+            console.log('data du value', data);
+            _this.transfert(data);
+            _this.updateList();
+        });
     };
     SearchComponent.prototype.transfert = function (data) {
         this.searchchamps = [];
@@ -973,9 +990,11 @@ var SearchComponent = /** @class */ (function () {
     SearchComponent.prototype.updateList = function () {
         this.bized.emit(this.listchampssearch);
     };
-    SearchComponent.prototype.onEnter = function (value) {
-        this.value = value;
-        this.search(null);
+    SearchComponent.prototype.clearField = function () {
+        console.log('clearField');
+        this.searchchamps = [];
+        this.listchampssearch = [];
+        this.bized.emit(this.listchampssearch);
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),

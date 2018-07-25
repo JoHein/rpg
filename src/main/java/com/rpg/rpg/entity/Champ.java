@@ -5,6 +5,7 @@
  */
 package com.rpg.rpg.entity;
 
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,6 +37,7 @@ public class Champ {
     private Integer charisme;
     private String description;
     private SpecialisationEnum spe;
+    private Date date;
 
     public Long getTechid() {
         return techid;
@@ -142,6 +144,13 @@ public class Champ {
         this.description = description;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
     
 }

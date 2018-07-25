@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.rpg.rpg.repositories.ChampRepository;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Date;
 import java.util.Optional;
-import java.util.Set;
-import java.util.logging.Logger;
 import javax.transaction.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -36,7 +34,7 @@ public class ChampController {
     
     @RequestMapping(method=RequestMethod.GET)
     public List<Champ> listChamps() {
-        return champRepo.findAll();
+        return champRepo.findAllByOrderByNomAsc();
     }
         
     @RequestMapping(value="/{techid}", method=RequestMethod.GET)
@@ -51,6 +49,9 @@ public class ChampController {
         if(champItem.getTechid() == null){
             Champ champ = new Champ();
             champItem.setTechid(champ.getTechid());
+            Date date = new Date();
+            System.out.println("Date ::: " + date);
+            champItem.setDate(date);
             return champRepo.save(champItem);
         } else {
             return champRepo.save(champItem);
@@ -69,7 +70,7 @@ public class ChampController {
     public List<Champ> nomRessemble(@RequestParam("nom") String nom) {
         
         List<Champ> listChamp = new ArrayList<>();
-        listChamp = champRepo.findByNomIgnoreCaseContaining(nom);
+        listChamp = champRepo.findByNomIgnoreCaseContainingOrderByNomAsc(nom);
 
         return listChamp;
     }

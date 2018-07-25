@@ -28,3 +28,5 @@
 -- alter table champ alter column techid bigint not null auto_increment;
 -- 
 -- insert into champ(nom,prenom,age,gender,agilite,force,intelect,magie,endurance, charisme, description, spe) values ('Ranga','Gerald', 20,1,30,15,35,45,40,13,'The white wolf',1);
+
+-- alter table champ add column date DATE;
